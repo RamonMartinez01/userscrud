@@ -1,5 +1,5 @@
 
-const UserCard = ({ user, deleteUser, setInfoUpdate }) => {
+const UserCard = ({ user, deleteUser, setInfoUpdate, setIsDisable }) => {
 
     const handleDelete = () => {
         deleteUser('/users', user.id)
@@ -7,6 +7,7 @@ const UserCard = ({ user, deleteUser, setInfoUpdate }) => {
     
     const handleEdit = () => {
         setInfoUpdate(user)
+        setIsDisable(false)
     }
 
   return (

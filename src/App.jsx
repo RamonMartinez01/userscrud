@@ -7,6 +7,7 @@ import UserCard from './components/UserCard'
 function App() {
 
   const [infoUpdate, setInfoUpdate] = useState()
+  const [isDisable, setIsDisable] = useState(true)
  
   const url ='https://users-crud.academlo.tech'
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useCrud(url)
@@ -16,12 +17,21 @@ function App() {
   }, [])
   
  console.log(users);
+  const handleNewUser = () => {
+    setIsDisable(false)
+  }
+ 
   return (
     <div>
       <h1>Users</h1>
+      <button onClick={handleNewUser}>Create New User</button>
       <FormUser
       createUser={createUser}
       infoUpdate={infoUpdate}
+      updateUser={updateUser}
+      setInfoUpdate={setInfoUpdate}
+      isDisable={isDisable} 
+      setIsDisable={setIsDisable}
       />
       <div>
         {
@@ -30,8 +40,8 @@ function App() {
             key={user.id}
             user={user}
             deleteUser={deleteUser}
-            updateUser={updateUser}
             setInfoUpdate={setInfoUpdate}
+            setIsDisable={setIsDisable}
             />
           ))
         }
