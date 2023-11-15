@@ -22,18 +22,22 @@ function App() {
   }
  
   return (
-    <div>
-      <h1>Users</h1>
-      <button onClick={handleNewUser}>Create New User</button>
-      <FormUser
-      createUser={createUser}
-      infoUpdate={infoUpdate}
-      updateUser={updateUser}
-      setInfoUpdate={setInfoUpdate}
-      isDisable={isDisable} 
-      setIsDisable={setIsDisable}
-      />
+    <div className='app'>
+      <div className='app__header-div'>
+        <h1 className='app__title'>Users</h1>
+        <button className='app__create-btn' onClick={handleNewUser}>Create New User</button>
+      </div>
       <div>
+        <FormUser
+        createUser={createUser}
+        infoUpdate={infoUpdate}
+        updateUser={updateUser}
+        setInfoUpdate={setInfoUpdate}
+        isDisable={isDisable} 
+        setIsDisable={setIsDisable}
+        />
+      </div>
+      <div className='app__userCard-container'>
         {
           users?.map(user => (
             <UserCard
