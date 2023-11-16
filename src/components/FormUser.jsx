@@ -27,7 +27,7 @@ import './Styles/FormUser.css'
             birthday:''
         })
     }
-    const handleExist = () => {
+    const handleExit = () => {
         setIsDisable(true)
         reset({
             email:'',
@@ -43,7 +43,7 @@ import './Styles/FormUser.css'
     <div className={`form__container ${isDisable && "form__disable"}`}>
         <form className="form" onSubmit={handleSubmit(submit)}>
             <h2 className="form__title">User Information</h2>
-            <div onClick={handleExist} className="form__x"><i className='bx bx-x-circle'></i></div>
+            <div onClick={handleExit} className="form__x"><i className='bx bx-x-circle'></i></div>
             <label className="form__label">
                 <span className="form__span">Email</span>
                 <input className="form__input"  {...register('email')} type="email" /></label>

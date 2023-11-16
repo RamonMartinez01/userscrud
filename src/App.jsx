@@ -3,11 +3,13 @@ import FormUser from './components/FormUser'
 import useCrud from './hoocks/useCrud'
 import { useEffect, useState } from 'react'
 import UserCard from './components/UserCard'
+import UserDeleted from './components/UserDeleted'
 
 function App() {
 
   const [infoUpdate, setInfoUpdate] = useState()
   const [isDisable, setIsDisable] = useState(true)
+  const [isDeleted, setIsDeleted] = useState(true)
  
   const url ='https://users-crud.academlo.tech'
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useCrud(url)
@@ -49,9 +51,16 @@ function App() {
             deleteUser={deleteUser}
             setInfoUpdate={setInfoUpdate}
             setIsDisable={setIsDisable}
+            setIsDeleted={setIsDeleted}
             />
           ))
         }
+      </div>
+      <div>
+        <UserDeleted 
+        isDeleted={isDeleted}
+        setIsDeleted={setIsDeleted}
+        />
       </div>
     </div>
   )

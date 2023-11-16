@@ -18,7 +18,7 @@
 }
 .form {
     position: relative;
-    background-color: white;
+    background-color: rgb(232, 243, 243);
     width: 100%;
     max-width: 22em;
     display: flex;
@@ -61,8 +61,8 @@
     font-size: 1.1rem;
     padding: 0.5em;
     border: none;
-    background-color: aquamarine;
-    color: white;
+    background-color:rgb(114, 228, 230);
+    color: black;
     border-radius: 0.6em;
     margin-top: 1em;
 }

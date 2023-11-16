@@ -1,5 +1,5 @@
 .app {
-    background-color: rgb(255, 246, 240);
+    background-color: rgb(240,255,255);
     min-height: 100vh;
     margin-top: 0;
 }
@@ -27,9 +27,22 @@
     padding-left: 5em;
     padding-right: 5em;
 }
+.app__create-btn {
+    width: 13em;
+    height: 3.5em;
+    background-color: rgb(114, 228, 230);
+    color: black;
+    border-radius: 0.3em;
+    border-color: rgba(0, 0, 0, 0.551);
+    font-size: 5rem bolder;
+}
+.app__create-btn:hover {
+    filter: brightness(1.2);
+}
 .app__title {
     width: 20%;
     font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .app__header-separator {
     height: 1em;
