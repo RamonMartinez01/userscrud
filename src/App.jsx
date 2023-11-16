@@ -23,10 +23,13 @@ function App() {
  
   return (
     <div className='app'>
-      <div className='app__header-div'>
-        <h1 className='app__title'>Users</h1>
-        <button className='app__create-btn' onClick={handleNewUser}>Create New User</button>
-      </div>
+      <section className='app__header-section'>
+        <div className='app__header-div'>
+          <h1 className='app__title'>Users</h1>
+          <button className='app__create-btn' onClick={handleNewUser}>Create New User</button>
+        </div>
+        <hr className='app__header-separator'/>
+      </section>
       <div>
         <FormUser
         createUser={createUser}

@@ -1,0 +1,41 @@
+.card__user {
+    width: 100%;
+    max-width: 18em;
+    border-radius: 0.6em;
+    background-color: rgb(236, 236, 213);
+    color: black; 
+    padding: 0.8em;
+    transition: transform 150ms linear,
+                box-shadow 150ms ease;
+    position: relative;
+}
+.card__user:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5em;
+}
+.card__name {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+}
+.card__list {
+    margin-bottom: 2em;
+    gap: 1.5em;
+}
+.card__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 0.9em; 
+}
+.card__delete-btn {
+    position: absolute;
+    bottom: 0.9em;
+}
+.card__edit-btn {
+    position: absolute;
+    bottom: 0.9em;
+    right: 1em;
+}
