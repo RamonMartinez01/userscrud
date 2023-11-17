@@ -61,7 +61,10 @@
 @media only screen and (max-width: 780px) {
 
     .card__user {
-        max-width: 13em;
+        max-width: 16em;
+    }
+    .card__item {
+        font-size: 1rem;
     }
 
 }
