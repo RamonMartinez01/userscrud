@@ -69,8 +69,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0.5em;
-        padding-top: 0.5em;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
         padding-left: 4em;
         padding-right: 4em;
     }
