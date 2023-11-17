@@ -9,7 +9,7 @@ function App() {
 
   const [infoUpdate, setInfoUpdate] = useState()
   const [isDisable, setIsDisable] = useState(true)
-  const [isDeleted, setIsDeleted] = useState(true)
+  const [isDeleted, setIsDeleted] = useState({ isDeleted: true, deletedUserName:'' })
  
   const url ='https://users-crud.academlo.tech'
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useCrud(url)

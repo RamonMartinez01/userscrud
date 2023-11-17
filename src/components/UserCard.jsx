@@ -24,7 +24,7 @@ const UserCard = ({ user, deleteUser, setInfoUpdate, setIsDisable, setIsDeleted 
                 <hr />
                 <li className='card__item'>
                     <span className='card__label'>Birthday</span>
-                    <span className='card__label-info'>{user.birthday}</span>
+                    <span className='card__label-info'><i className='bx bxs-gift'></i>{user.birthday}</span>
 
                 </li>
             </ul>
