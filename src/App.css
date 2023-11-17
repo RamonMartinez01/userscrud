@@ -72,7 +72,8 @@
         padding-bottom: 0.4em;
         padding-left: 4em;
         padding-right: 4em;
-        top: 1em;
+        position: fixed;
+        top: 0.8em;
     }
 
     .app__create-btn {
