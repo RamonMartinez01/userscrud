@@ -11,7 +11,7 @@ function App() {
   const [isDisable, setIsDisable] = useState(true)
   const [isDeleted, setIsDeleted] = useState({ isDeleted: true, deletedUserName:'' })
  
-  const url ='https://users-crud.academlo.tech'
+  const url ='https://sqlz2403-dev-ncfb.1.us-1.fl0.io/users'
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useCrud(url)
 
   useEffect(() => {
