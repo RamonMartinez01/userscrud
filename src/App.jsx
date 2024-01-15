@@ -19,7 +19,7 @@ function App() {
     getUsers('/users')
   }, [getUsers])
   
-console.log(users);
+
   const handleNewUser = () => {
     setIsDisable(false)
   }
