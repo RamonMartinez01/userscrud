@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     getUsers('/users')
-  }, [])
+  }, [getUsers])
   
 console.log(users);
   const handleNewUser = () => {
