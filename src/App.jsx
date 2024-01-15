@@ -12,13 +12,14 @@ function App() {
   const [isDeleted, setIsDeleted] = useState({ isDeleted: true, deletedUserName:'' })
  
   const url ='https://sqlz2403-dev-ncfb.1.us-1.fl0.io'
+            //https://sqlz2403-dev-ncfb.1.us-1.fl0.io
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useCrud(url)
 
   useEffect(() => {
     getUsers('/users')
   }, [])
   
- console.log(users);
+console.log(users);
   const handleNewUser = () => {
     setIsDisable(false)
   }
